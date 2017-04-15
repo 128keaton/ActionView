@@ -75,7 +75,11 @@ class AnimatedSelectionView: UITableViewController {
         cell.textLabel?.text = cellData["label"] as? String
         cell.tag = cellData["index"] as! Int
         
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 35, weight: UIFontWeightMedium)
+        if #available(iOS 8.2, *) {
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 35, weight: UIFontWeightMedium)
+        } else {
+            cell.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 35)
+        }
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.textColor = cellData["labelColor"] as? UIColor
         

@@ -10,7 +10,7 @@
 		8AEC886F1EA27CA5005D36CF /* ActionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEC88651EA27CA5005D36CF /* ActionView.framework */; };
 		8AEC88741EA27CA5005D36CF /* ActionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC88731EA27CA5005D36CF /* ActionViewTests.swift */; };
 		8AEC88761EA27CA5005D36CF /* ActionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEC88681EA27CA5005D36CF /* ActionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AEC88801EA27CAF005D36CF /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC887F1EA27CAF005D36CF /* ActionView.swift */; };
+		8AEC88821EA28028005D36CF /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC88811EA28028005D36CF /* ActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		8AEC886E1EA27CA5005D36CF /* ActionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEC88731EA27CA5005D36CF /* ActionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewTests.swift; sourceTree = "<group>"; };
 		8AEC88751EA27CA5005D36CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AEC887F1EA27CAF005D36CF /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = SOURCE_ROOT; };
+		8AEC88811EA28028005D36CF /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		8AEC88671EA27CA5005D36CF /* ActionView */ = {
 			isa = PBXGroup;
 			children = (
-				8AEC887F1EA27CAF005D36CF /* ActionView.swift */,
+				8AEC88811EA28028005D36CF /* ActionView.swift */,
 				8AEC88681EA27CA5005D36CF /* ActionView.h */,
 				8AEC88691EA27CA5005D36CF /* Info.plist */,
 			);
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AEC88801EA27CAF005D36CF /* ActionView.swift in Sources */,
+				8AEC88821EA28028005D36CF /* ActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +335,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ActionView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.ActionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +356,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ActionView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.ActionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
