@@ -10,6 +10,7 @@
 		8AEC886F1EA27CA5005D36CF /* ActionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEC88651EA27CA5005D36CF /* ActionView.framework */; };
 		8AEC88741EA27CA5005D36CF /* ActionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC88731EA27CA5005D36CF /* ActionViewTests.swift */; };
 		8AEC88761EA27CA5005D36CF /* ActionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEC88681EA27CA5005D36CF /* ActionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AEC88801EA27CAF005D36CF /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC887F1EA27CAF005D36CF /* ActionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		8AEC886E1EA27CA5005D36CF /* ActionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEC88731EA27CA5005D36CF /* ActionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewTests.swift; sourceTree = "<group>"; };
 		8AEC88751EA27CA5005D36CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AEC887F1EA27CAF005D36CF /* ActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		8AEC88671EA27CA5005D36CF /* ActionView */ = {
 			isa = PBXGroup;
 			children = (
+				8AEC887F1EA27CAF005D36CF /* ActionView.swift */,
 				8AEC88681EA27CA5005D36CF /* ActionView.h */,
 				8AEC88691EA27CA5005D36CF /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					8AEC88641EA27CA5005D36CF = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					8AEC886D1EA27CA5005D36CF = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEC88801EA27CAF005D36CF /* ActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		8AEC887A1EA27CA5005D36CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.ActionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		8AEC887B1EA27CA5005D36CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		8AEC887D1EA27CA5005D36CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ActionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.ActionViewTests;
@@ -369,6 +378,7 @@
 		8AEC887E1EA27CA5005D36CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ActionViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.128keaton.ActionViewTests;
